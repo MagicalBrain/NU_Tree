@@ -1,6 +1,6 @@
 #pragma once
-//#include <stdio.h>
-#include <iostream>
+#include <stdio.h>
+//#include <iostream>
 #include <malloc.h>
 
 #define Elemtype char

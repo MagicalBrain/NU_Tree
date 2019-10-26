@@ -47,5 +47,23 @@
     <ClInclude Include="func07.h">
       <Filter>资源文件</Filter>
     </ClInclude>
+    <ClInclude Include="func08.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func09.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Head.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func10.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func11.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func12.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

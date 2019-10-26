@@ -2,13 +2,9 @@
 #include <malloc.h>
 #include "BiTree.h"
 #include "Output.h"
-#include "func01.h"
-#include "func02.h"
-#include "func03.h"
-#include "func04.h"
-#include "func05.h"
-#include "func06.h"
-#include "func07.h"
+#include "Head.h"
+
+#define _CRT_SECURE_NO_WARNINGS
 
 
 //1、使用先序遍历的方式建立一棵二叉树。
@@ -117,7 +113,7 @@ int main06()
 	return 0;
 }
 
-int main()
+int main07()
 {
 	//Elemtype str[40] = "ABC###D##";
 	Elemtype str[40] = "ABE##C##D##";
@@ -136,5 +132,120 @@ int main()
 	char str2[100] = "树状图\\0702.dot";
 	fprint_tree(T, str2);
 
+	return 0;
+}
+
+int main08()
+{
+	//Elemtype str[40] = "ABC###D##";
+	Elemtype str[40] = "ABE##C##D##";
+	
+	BiTree T = (BiTree)malloc(sizeof(BiNode));
+	int num = 0;
+	int* i = &num;
+	T = CreatBiTree(str, i);
+	//CreatBiTree01(T, str);
+
+	char str1[100] = "树状图\\08.dot";
+	fprint_tree(T, str1);
+
+	Elemtype x;
+	scanf("%c", &x);
+	
+	Elemtype* re = func08(T, x);
+	if (re != NULL)
+	{
+		printf("%c的存储地址为%d\n", x, re);
+
+		printf("该存储地址存的是%c\n", *re);
+	}
+	else
+	{
+		printf("%c的存储地址为空",x);
+	}
+	return 0;
+}
+
+int main09()
+{
+	//Elemtype str[40] = "ABC###D##";
+	//Elemtype str[40] = "ABE##C##D##";
+	Elemtype str[40] = "ABC##DE##F##GH##IJ##K##";
+
+	BiTree T = (BiTree)malloc(sizeof(BiNode));
+	int num = 0;
+	int* i = &num;
+	T = CreatBiTree(str, i);
+	//CreatBiTree01(T, str);
+
+	char str1[100] = "树状图\\09.dot";
+	fprint_tree(T, str1);
+
+	Elemtype x;
+	scanf("%c", &x);
+
+	int re = func09(T, x);
+	
+	printf("%c为根的树的高度为%d", x, re);
+	
+	return 0;
+}
+
+int main10()
+{
+	Elemtype str1[40] = "ABC###D##";
+	Elemtype str2[40] = "ABE##C##D##";
+	
+	//Elemtype str1[40] = "ABD###C#E##";
+	//Elemtype str2[40] = "XYH###Z#I##";
+
+	BiTree T1 = (BiTree)malloc(sizeof(BiNode));
+	int num = 0;
+	int* i = &num;
+	T1 = CreatBiTree(str1, i);
+
+	BiTree T2 = (BiTree)malloc(sizeof(BiNode));
+	num = 0;
+	*i = num;
+	T2 = CreatBiTree(str2, i);
+	//CreatBiTree01(T, str);
+
+	char name1[100] = "树状图\\1001.dot";
+	fprint_tree(T1, name1);
+
+	char name2[100] = "树状图\\1002.dot";
+	fprint_tree(T2, name2);
+
+	bool re = func10(T1, T2);
+
+	if (re)
+		puts("这两树是相似的！");
+	else
+		puts("不是相似的！");
+	return 0;
+}
+
+int main()
+{
+	//Elemtype str[40] = "ABC###D##";
+	//Elemtype str[40] = "ABE##C##D##";
+	Elemtype str[40] = "ABC##DE##F##GH##IJ##K##";
+
+	//Elemtype str1[40] = "ABD###C#E##";
+	//Elemtype str2[40] = "XYH###Z#I##";
+
+	BiTree T = (BiTree)malloc(sizeof(BiNode));
+	int num = 0;
+	int* i = &num;
+	T = CreatBiTree(str, i);
+
+	char name[100] = "树状图\\11.dot";
+	fprint_tree(T, name);
+
+
+	bool re = func11(T);
+
+	if (re == NULL)
+		puts("构建失败！");
 	return 0;
 }
