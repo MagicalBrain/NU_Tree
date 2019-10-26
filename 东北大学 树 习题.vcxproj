@@ -129,6 +129,11 @@
     <ClInclude Include="BiTree.h" />
     <ClInclude Include="func01.h" />
     <ClInclude Include="func02.h" />
+    <ClInclude Include="func03.h" />
+    <ClInclude Include="func04.h" />
+    <ClInclude Include="func05.h" />
+    <ClInclude Include="func06.h" />
+    <ClInclude Include="func07.h" />
     <ClInclude Include="Output.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
