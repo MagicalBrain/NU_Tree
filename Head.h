@@ -10,3 +10,8 @@
 #include "func09.h"
 #include "func10.h"
 #include "func11.h"
+#include "func12.h"
+#include "func13.h"
+#include "func14.h"
+#include "func15.h"
+#include "func16.h"

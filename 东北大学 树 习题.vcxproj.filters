@@ -65,5 +65,17 @@
     <ClInclude Include="func12.h">
       <Filter>资源文件</Filter>
     </ClInclude>
+    <ClInclude Include="func13.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func14.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func15.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func16.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -140,6 +140,10 @@
     <ClInclude Include="func10.h" />
     <ClInclude Include="func11.h" />
     <ClInclude Include="func12.h" />
+    <ClInclude Include="func13.h" />
+    <ClInclude Include="func14.h" />
+    <ClInclude Include="func15.h" />
+    <ClInclude Include="func16.h" />
     <ClInclude Include="Head.h" />
     <ClInclude Include="Output.h" />
   </ItemGroup>

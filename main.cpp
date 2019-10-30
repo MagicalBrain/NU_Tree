@@ -225,7 +225,7 @@ int main10()
 	return 0;
 }
 
-int main()
+int main11()
 {
 	//Elemtype str[40] = "ABC###D##";
 	//Elemtype str[40] = "ABE##C##D##";
@@ -247,5 +247,105 @@ int main()
 
 	if (re == NULL)
 		puts("构建失败！");
+	return 0;
+}
+
+//int main12
+
+int main13()
+{
+	//Elemtype str[40] = "ABC###D##";
+	Elemtype str[40] = "ABE##C##D##";
+	//Elemtype str[40] = "ABC##DE##F##GH##IJ##K##";
+
+	//Elemtype str1[40] = "ABD###C#E##";
+	//Elemtype str2[40] = "XYH###Z#I##";
+
+	BiTree T = (BiTree)malloc(sizeof(BiNode));
+	int num = 0;
+	int* i = &num;
+	T = CreatBiTree(str, i);
+
+	char name[100] = "树状图\\13.dot";
+	fprint_tree(T, name);
+
+	func13(T);
+
+	return 0;
+}
+
+int main14()
+{
+	//Elemtype str[40] = "ABC###D##";
+	//Elemtype str[40] = "ABE##C##D##";
+	//Elemtype str[40] = "ABC##DE##F##GH##IJ##K##";
+	Elemtype str[40] = "ABC##D##EF##G##";
+
+	//Elemtype str1[40] = "ABD###C#E##";
+	//Elemtype str2[40] = "XYH###Z#I##";
+
+	BiTree T = (BiTree)malloc(sizeof(BiNode));
+	int num = 0;
+	int* i = &num;
+	T = CreatBiTree(str, i);
+
+	char name[100] = "树状图\\14.dot";
+	fprint_tree(T, name);
+
+	if (func14(T))
+		puts("是完全二叉树！");
+	else
+		puts("不是完全二叉树！");
+
+	return 0;
+}
+
+int main15()
+{
+	Elemtype str[40] = "ABC###D##";
+	//Elemtype str[40] = "ABE##C##D##";
+	//Elemtype str[40] = "ABC##DE##F##GH##IJ##K##";
+	//Elemtype str[40] = "ABC##D##EF##G##";
+
+	//Elemtype str1[40] = "ABD###C#E##";
+	//Elemtype str2[40] = "XYH###Z#I##";
+
+	BiTree T = (BiTree)malloc(sizeof(BiNode));
+	int num = 0;
+	int* i = &num;
+	T = CreatBiTree(str, i);
+
+	char name[100] = "树状图\\15.dot";
+	fprint_tree(T, name);
+
+	int re = func15(T);
+	printf("宽度为：%d\n", re);
+
+	return 0;
+}
+
+
+int main()
+{
+	//Elemtype str[40] = "ABC###D##";
+	//Elemtype str[40] = "ABE##C##D##";
+	//Elemtype str[40] = "ABC##DE##F##GH##IJ##K##";
+	//Elemtype str[40] = "ABC##D##EF##G##";
+	Elemtype str[40] = "ABC#D##E###G##";
+
+	//Elemtype str1[40] = "ABD###C#E##";
+	//Elemtype str2[40] = "XYH###Z#I##";
+
+	BiTree T = (BiTree)malloc(sizeof(BiNode));
+	int num = 0;
+	int* i = &num;
+	T = CreatBiTree(str, i);
+
+	char name[100] = "树状图\\16.dot";
+	fprint_tree(T, name);
+
+	int re = func16(T);
+	printf("不平衡结点的个数为：%d\n", re);
+
 	return 0;
 }
